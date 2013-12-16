@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
+ * Copyright (C) 2013 The XPerience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,7 +75,7 @@ static const struct sensor_t sSensorList[] = {
           SENSOR_TYPE_ACCELEROMETER, (GRAVITY_EARTH * 16.0f),
 		  (GRAVITY_EARTH * 16.0f) / 4096.0f, 0.145f, 10000, 0, 0, { } },
         { "AK8975 Orientation sensor",
-          "Asahi Kasei Microdevices",
+          "TeamMEX",
           1, SENSORS_ORIENTATION_HANDLE,
           SENSOR_TYPE_ORIENTATION, 360.0f,
 		  CONVERT_O, 0.495f, 10000, 0, 0, { } }
@@ -115,7 +116,7 @@ struct sensors_module_t HAL_MODULE_INFO_SYM = {
                 version_minor: 0,
                 id: SENSORS_HARDWARE_MODULE_ID,
                 name: "AKM Sensor module",
-                author: "Asahi Kasei Microdevices",
+                author: "Asahi Kasei Microdevices and TeamMEX",
                 methods: &sensors_module_methods,
         },
         get_sensors_list: sensors__get_sensors_list,
